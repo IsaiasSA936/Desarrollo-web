@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="css/main.css"
     <!--UTF8=tipo de carcateres especiales dentro de la pagina-->
     <meta charset="UTF-8">
     <!--Compatible con el explorador edge-->
@@ -30,13 +31,21 @@
     <section>
       
         <form action="">
-            <input type="text" id="nombre(s)" placeholder="nombre">
-            <input type="text " id="apellidos" placeholder="apellidos">
-            <input type="date" id="fecha">
-            <input type="tel" id="telefono" placeholder="55-55-55-55-55">
-            <input type="email" placeholder="chimpanse@gmail.com">
+            <input type="text" id ="nombre(s)" placeholder required="nombre">
+            <input type="text " id ="apellidos" placeholder required="apellidos">
+            <input type="date" id required="fecha">
+            <input type="tel" id required="telefono" placeholder required="55-55-55-55-55">
+            <input type="email" placeholder required ="chimpanse@gmail.com">
+            <input type="pasword" placeholder required="pasword">
             <input type="submit" value="Enviar">
+            <input type="file" id="archivo" required>
         </form>
+    </section>
+    <section>
+        <div id="imagenes">
+            <img src="img/comunismo.png" alt="comunismo" height="150px" class="efecto" >
+            <img src="img/corea.jpg" alt="corea" height="150px">
+        </div>
     </section>
 </body>
 </html>
