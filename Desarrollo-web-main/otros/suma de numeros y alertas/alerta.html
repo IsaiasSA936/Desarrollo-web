@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+</head>
+<body>
+    <!--Alerta sin script-->
+    <h2>alerta sin script</h2>
+    <input type="button" value="Texto" onclick="alert('Hola mundo');">
+    <hr>
+    <!--Alerta con script-->
+    <h3>alerta con script</h3>
+    <input type="button" value="Mensaje" onclick="alerta()">
+    <hr>
+    <!--Alerta con checkbox sin script-->
+    <h4>alerta al presionar un checkbox</h4>
+    <input type="checkbox" value="Presionar" onclick="alert('¿Porque me presionas?');">
+    <hr>
+    <!--Alerta con checkbox y script-->
+    <h5>alerta con checkbox y script</h5>
+    <input type="checkbox" value="Presion" onclick="presionar()">
+    <hr>
+    <!--Esribir con script-->
+    <p>escribir con javascript</p>
+    <input type="button" value="escribir mensaje" onclick="escribir()">
+    <hr>
+    <!--escribir sin script-->
+    <p>escribir sin script</p>
+    <input type="button" value="Mensaje" onclick="document.write('Ya deja de presionar botones >:C');">
+    <hr>
+    <!--Vinculos sin script-->
+    <p>vinculos con alertas</p>
+    <a href="javascript:alert('esto es una alerta de js :D')">da click sobre mi :D </a>
+    <hr>
+    <!--imprimir pantalla-->
+    <a href="javascript:window.print();">Imprimo en PDF, solo da click</a>
+    <hr>
+    <p>alerta con opciones de aceptar y cancelar</p>
+    <a href="#" onclick="salir()">salir del la pagina</a>
+
+    <script>
+        function alerta(){
+            alert("Adios Mundo");
+        }
+        function presionar(){
+            alert("Fijate wey, no me presiones");
+        }
+        function escribir(){
+            document.write("Deja de presionar todos los botones que vez >:C");
+        }
+        function salir(){
+            var salir=confirm("¿Quieres salirte Neta?")
+            if (salir) {
+                alert ("A pues ni te queria aqui de todas formas >:C")
+                window.location ="https://www.google.com";
+            }
+                else{
+                    alert("Sabia que te querias quedar conmigo :D")
+                }
+        }
+    </script>
+</body>
+</html>
